@@ -1,0 +1,204 @@
+[
+  {
+    "label": "Phan I - Cau 1",
+    "type": "multiple_choice",
+    "question": "Trong các phân tử sau đây, có bao nhiêu phân tử được cấu tạo từ đơn phân A, T, G, C?\nI. DNA polymerase. II. Ligase. III. mRNA.\nIV. Gene tRNA. V. Gene rRNA. VI. Gene Hbβ.",
+    "choices": ["3", "4", "5", "6"],
+    "answer": "A"
+  },
+  {
+    "label": "Phan I - Cau 2",
+    "type": "multiple_choice",
+    "question": "Cho một vi khuẩn (vi khuẩn này không chứa plasmid và DNA của nó được cấu tạo từ 15N) vào môi trường nuôi cấy chỉ có 14N. Sau nhiều thế hệ sinh sản, người ta thu lấy toàn bộ các vi khuẩn, phá màng tế bào của chúng và tiến hành phân tích phóng xạ thì được 2 loại phân tử DNA, trong đó loại DNA chỉ có 14N có số lượng nhiều gấp 15 lần loại phân tử DNA có 15N. Phân tử DNA của vi khuẩn nói trên đã tái bản bao nhiêu lần?",
+    "choices": ["16", "5", "15", "4"],
+    "answer": "B"
+  },
+  {
+    "label": "Phan I - Cau 3",
+    "type": "multiple_choice",
+    "question": "Sau khi tiếp xúc với benzopyrene, một chất gây ung thư và đột biến gene. Gene đột biến tổng hợp protein ngắn hơn protein do gene bình thường tạo ra. Cho biết đột biến này không ảnh hưởng đến chiều dài của phân tử mARN trưởng thành. Gene đã bị đột biến nào dạng nào sau đây?",
+    "choices": ["Đột biến câm", "Đột biến sai nghĩa", "Đột biến vô nghĩa", "Đột biến đồng nghĩa"],
+    "answer": "C"
+  },
+  {
+    "label": "Phan I - Cau 4",
+    "type": "multiple_choice",
+    "question": "Các nhà khoa học thấy loài S. pneumoniae khi gặp môi trường bất lợi như có thuốc kháng sinh thì một trong số các gene được kích hoạt là gene CSP, sản sinh ra protein CSP. Protein này làm cho tế bào dễ dàng nhận được các gene từ môi trường bên ngoài giúp chúng nhanh chóng trở nên kháng thuốc kháng sinh. Nhận định nào sau đây sai?",
+    "choices": ["Khi môi trường không có yếu tố bất lợi (không có kháng sinh), gene CSP không được biểu hiện.", "Gene CSP luôn được biểu hiện trong tế bào loài S. pneumoniae.", "Để biểu hiện gene CSP cần có quá trình phiên mã và dịch mã.", "S. pneumoniae trở nên kháng kháng sinh có thể do nhận được gene kháng kháng sinh từ môi trường."],
+    "answer": "B"
+  },
+  {
+    "label": "Phan I - Cau 5",
+    "type": "multiple_choice",
+    "question": "Hình 5 mô tả quá trình phiên mã của 1 tế bào sinh vật có nhiều enzyme có thể cùng phiên mã trên 1 mạch khuôn của gene. Nhận định nào sau đây đúng về quá trình phiên mã nói trên?",
+    "images": ["assets/image1.png"],
+    "choices": ["Quá trình này xảy ra ở tế bào nhân thực.", "RNA polymerase di chuyển trên mạch khuôn theo chiều từ X Y.", "Trong quá trình kéo dài chuỗi polynucleotide, nucleotide tự do sẽ liên kết vào mRNA 4 ở vị trí Z.", "Trình tự 10 nucleotide đầu tiên trên mRNA 4 là 5’ AUGGCCGCGU 3’."],
+    "answer": "B"
+  },
+  {
+    "label": "Phan I - Cau 6",
+    "type": "multiple_choice",
+    "question": "Cho các ví dụ về điều hòa biểu hiện gene ở mức độ tế bào giúp cơ thể sinh trưởng và phát triển bình thường tương ứng với các điều kiện môi trường khác nhau trong bảng 2 sau đây.\nTrong các tổ hợp ghép sau đây, tổ hợp ghép đúng nhất là",
+    "images": ["assets/image2.png"],
+    "choices": ["1-b, 2-c, 3-а", "1-b, 2-a, 3-d", "1-c, 2-d, 3-b", "1-c, 2-b, 3-a"],
+    "answer": "A"
+  },
+  {
+    "label": "Phan I - Cau 7",
+    "type": "multiple_choice",
+    "question": "Trong các dạng đột biến sau, có bao nhiêu dạng đột biến không làm thay đổi tỉ lệ (A + G)/(T + C) của gene trong tế bào?\nI. Thay thế cặp A-T bằng cặp G-C. II. Thay thế cặp A-T bằng một cặp T-A.\nIII. Thêm một cặp nucleotide. IV. Mất một cặp nucleotide.",
+    "choices": ["3", "4", "1", "2"],
+    "answer": "B"
+  },
+  {
+    "label": "Phan I - Cau 8",
+    "type": "multiple_choice",
+    "question": "Khiếm thính là hiện tượng giảm một phần hay toàn bộ khả năng cảm nhận về âm thanh gây ra bởi môi trường hoặc sai hỏng gene. Khoảng 50% trường hợp khiếm thính di truyền do gene gây ra, trong đó khiếm thính di truyền không hội chứng (chỉ bị điếc không bị các bất thường khác) chiếm tới 70%. Hiện nay có hơn 160 gene được xác định là có liên quan đến khiếm thính di truyền không hội chứng, trong đó gene GJB2 nằm trên nhiễm sắc thể 13 là một trong những nguyên nhân chính gây bệnh. Trong việc điều trị, các bác sĩ nhận thấy các trẻ khiếm thính do đột biến gene đều đáp ứng tốt với ốc tai điện tử.\nNghiên cứu xác định đột biến trong gene GJB2 ở một gia đình người Việt Nam có hai con mắc bệnh khiếm thính không hội chứng. Sau khi so sánh trình tự gene GJB2 thu được với trình tự gene công bố trên ngân hàng dữ liệu gene quốc tế GenBank, đột biến đồng hợp tử c.235delC đã được tìm thấy ở cả hai bệnh nhi; trong khi cả bố và mẹ hai bệnh nhi này đều mang đột biến dị hợp tử c.235delC. Đây là đột biến làm thay đổi khung dịch mã tạo ra một chuỗi polypeptide ngắn hơn gây mất chức năng của protein. (Nguồn: https://s.net.vn/I3fU)\nDựa vào thông tin trên, nhận định nào sau đây là đúng?",
+    "choices": ["Đột biến gene GJB2 thuộc dạng đột biến thay thế một cặp nucleotide.", "Kết quả của nghiên cứu có ý nghĩa trong công tác tư vấn di truyền và điều trị bệnh khiếm thính.", "Bệnh nhân bị khiếm thính di truyền không nên kết hôn vì chắc chắn sẽ sinh ra con mắc bệnh khiếm thính.", "Với trẻ bị khiếm thính do đột biến gene GJB2, nếu chữa trị sớm cũng không thể nghe được bình thường."],
+    "answer": "B"
+  },
+  {
+    "label": "Phan I - Cau 9",
+    "type": "multiple_choice",
+    "question": "Cho thông tin về liên kết bổ sung bình thường giữa các base trong DNA (Hình 6.1). Sự bắt cặp nhầm giữa các base xảy ra trong nhân đôi (Hình 6.2). Xác định loại base nào trong hình 6.2 (a, b, c, d) là base dạng hiếm (hỗ biến)?",
+    "images": ["assets/image3.png"],
+    "choices": ["(a) và (d)", "(a) và (c)", "(b) và (c)", "(b) và (d)"],
+    "answer": "A"
+  },
+  {
+    "label": "Phan I - Cau 10",
+    "type": "multiple_choice",
+    "question": "Bảng 1 thể hiện trình tự mạch gốc của 4 đoạn phân tử DNA ở vi khuẩn. Đoạn phân tử có số liên kết hydrogen nhiều nhất là\nĐoạn DNA 1: ATTATTGC\nĐoạn DNA 2: TAGCGCGC\nĐoạn DNA 3: GGGCGCGC\nĐoạn DNA 4: TATTTTTTT",
+    "choices": ["đoạn DNA 3", "đoạn DNA 2", "đoạn DNA 1", "đoạn DNA 4"],
+    "answer": "A"
+  },
+  {
+    "label": "Phan I - Cau 11",
+    "type": "multiple_choice",
+    "question": "Hệ gene của sinh vật nhân sơ gồm những thành phần nào sau đây?\n(1) DNA vùng nhân. (2) DNA ti thể. (3) DNA lục lạp. (4) Plasmid.",
+    "choices": ["(1), (4)", "(1), (3)", "(2), (3)", "(2), (4)"],
+    "answer": "A"
+  },
+  {
+    "label": "Phan I - Cau 12",
+    "type": "multiple_choice",
+    "question": "Trong bảng mã di truyền, có 6 bộ ba mã hóa cho amino acid Leucine. Đây là đặc điểm nào của mã di truyền?",
+    "choices": ["Tính thoái hóa", "Tính đặc hiệu", "Tính phổ biến", "Tính liên tục"],
+    "answer": "A"
+  },
+  {
+    "label": "Phan I - Cau 13",
+    "type": "multiple_choice",
+    "question": "Cho các phân tử và thành phần cấu tạo theo bảng 1. Những phân tử trên có thành phần cấu tạo tương ứng là",
+    "images": ["assets/image4.png"],
+    "choices": ["1 – e; 2 – b; 3 – a; 4 – d", "1 – e; 2 – c; 3 – d; 4 – a", "1 – c; 2 – b; 3 – a; 4 – e", "1 – a; 2 – e; 3 – c; 4 – d"],
+    "answer": "A"
+  },
+  {
+    "label": "Phan I - Cau 14",
+    "type": "multiple_choice",
+    "question": "Hình 2 mô tả một đoạn nucleic acid. Nhận định nào sau đây đúng về cấu trúc của đoạn nucleic acid này?",
+    "images": ["assets/image5.png"],
+    "choices": ["X là đường C5H10O5.", "W là nucleotide loại thymine.", "Z là nucleotide có kích thước bé.", "V là liên kết hydrogen."],
+    "answer": "B"
+  },
+  {
+    "label": "Phan I - Cau 15",
+    "type": "multiple_choice",
+    "question": "Bước số mấy trong hình 3 giúp tách protein histone ra khỏi DNA?",
+    "images": ["assets/image7.png"],
+    "choices": ["1", "2", "3", "4"],
+    "answer": "D"
+  },
+  {
+    "label": "Phan I - Cau 16",
+    "type": "multiple_choice",
+    "question": "Để xác định được các kiểu đột biến của một gene ở sinh vật nhân sơ, các nhà khoa học đã tách chiết mRNA của gene và chuỗi polypeptide do gene quy định rồi tiến hành phương pháp điện di thu được kết quả như hình 6. Lưu ý là mRNA và protein có kích thước càng nhỏ thì càng di chuyển nhanh xuống bên dưới theo chiều mũi tên. Mẫu đối chứng là của thể bình thường, ba hình còn lại là của các thể đột biến (1), (2) và (3). Các ký hiệu N chỉ bản gel điện di của mRNA, W chỉ bản gel điện di của protein. Các băng điện di có vạch màu đen đậm.\nNhận định nào sai về các thể đột biến?",
+    "images": ["assets/image8.png"],
+    "choices": ["Thể đột biến 2 và 3 có thể thuộc cùng một kiểu đột biến thay thế một cặp nucleotide.", "Kích thước phân tử mRNA của thể đột biến 3 nhỏ hơn so với mẫu đối chứng.", "Thể đột biến 2 có thể do đột biến thay thế một cặp nucleotide dẫn tới xuất hiện sớm bộ ba kết thúc.", "Protein được tổng hợp từ thể đột biến 1 có số lượng amino acid bằng với protein của thể bình thường."],
+    "answer": "A"
+  },
+  {
+    "label": "Phan I - Cau 17",
+    "type": "multiple_choice",
+    "question": "Công nghệ DNA tái tổ hợp đã có nhiều thành tựu đột phá, như tạo sinh vật biến đổi gene. Hình 5 thể hiện các bước tạo DNA tái tổ hợp; trong đó, gene M của một loài nấm sợi được nối với vector plasmid X để tạo thành DNA tái tổ hợp Y. Biết rằng, các thí nghiệm được thực hiện trong điều kiện tối ưu, không có đột biến phát sinh. Phát biểu nào sau đây sai?",
+    "images": ["assets/image9.png"],
+    "choices": ["Nếu DNA tái tổ hợp Y bị cắt bởi enzyme giới hạn T thì tạo ra 2 đoạn DNA khác nhau.", "DNA tái tổ hợp Y được tạo ra dựa trên nguyên lí biểu hiện gene.", "Enzyme giới hạn T có tác dụng xúc tác cắt liên kết phosphodiester giữa các nucleotide.", "DNA tái tổ hợp Y có kích thước 5184 cặp nucleotide."],
+    "answer": "B"
+  },
+  {
+    "label": "Phan I - Cau 18",
+    "type": "multiple_choice",
+    "question": "Cimex lectularius là một loài côn trùng ngày càng kháng thuốc trừ sâu beta-cyluthrin. Các nhà nghiên cứu cho rằng Cimex lectularius có một số gene góp phần vào khả năng kháng thuốc, bao gồm P450, Abc8 và Cps. Để nghiên cứu vai trò của các gene này trong khả năng kháng thuốc trừ sâu, các nhà nghiên cứu đã xóa một hoặc nhiều gene này ở các chủng C.lectularius khác nhau rồi xử lý các chủng bằng thuốc trừ sâu beta-cyluthrin. Mỗi chủng đều giống hệt nhau về mặt di truyền ngoại trừ các gene bị xóa và đều khỏe mạnh như nhau khi không có beta-cyluthrin. Tỉ lệ sống sót của từng chủng sau khi xử lý bằng beta-cyluthrin được thể hiện trên hình 4. Theo lý thuyết, nhận định nào sau đây về hiệu quả kháng thuốc của các gene là đúng?",
+    "images": ["assets/image11.png"],
+    "choices": ["Chủng V là chủng đối chứng.", "Gene Abc8 có hiệu quả nhất trong việc kháng beta - cyluthrin.", "Cps có khả năng kháng thuốc cao nhất.", "Tỉ lệ sống sót ở chủng V thấp nhất là do xoá gene quy định tính kháng cao nhất là P450."],
+    "answer": "B"
+  },
+  {
+    "label": "Phan II - Cau 1",
+    "type": "true_false_group",
+    "question": "Nhiệt độ để phá vỡ các liên kết hydrogen và làm tách hai mạch phân tử DNA mạch kép được gọi là nhiệt độ nóng chảy. Bảng 5 cho biết nhiệt độ nóng chảy của DNA trong vùng nhân ở 5 loài vi khuẩn khác nhau. Biết các đoạn phân tử DNA có cùng chiều dài.\nLoài: 1, 2, 3, 4, 5\nNhiệt độ nóng chảy của DNA (oC): 65, 75, 70, 85, 68\nPhát biểu nào không đúng khi nói về các đoạn phân tử DNA đang xét ở các loài này?",
+    "statements": ["Cả 5 phân tử DNA này đều có tỉ lệ.", "Số liên kết phosphodieste (liên kết cộng hóa trị) giữa các nucleotide của DNA ở loài 4 là lớn nhất.", "Số liên kết hydrogen trong phân tử DNA của loài (1) ít hơn loài (2).", "Trong mỗi phân tử DNA này, nhiệt độ nóng chảy phụ thuộc vào tỉ lệ."],
+    "answer": ["Đ", "S", "Đ", "Đ"]
+  },
+  {
+    "label": "Phan II - Cau 2",
+    "type": "true_false_group",
+    "question": "Em bé “ba bố mẹ” được sinh ra bằng phương pháp TPIVF (Three-Parent in Vitro Fertilization) là những em bé được sinh ra có DNA của mẹ ruột, cha ruột và một người hiến tặng trứng. Phương pháp TPIVF được thực hiện như sau: “Lấy nhân từ trứng của người mẹ bị bệnh di truyền tế bào chất rồi chuyển vào trứng đã loại bỏ nhân (vẫn chứa DNA ti thể) từ người hiến tặng trứng không bị bệnh di truyền tế bào chất; cho thụ tinh nhân tạo giữa trứng chuyển nhân với tinh trùng từ bố, sau đó đưa trứng thụ tinh trở lại tử cung của người mẹ.” Kỹ thuật này cho phép thay thế ti thể mang gene gây bệnh nan y về tim, gan, rối loạn não bộ, mù và loạn dưỡng cơ... của người mẹ ruột bằng ti thể lành mạnh của người hiến tặng. Cho các nhận định sau:",
+    "statements": ["Em bé được tạo ra bằng phương pháp này mang đặc điểm di truyền qua tế bào chất của người hiến tặng trứng.", "Trong phương pháp này vai trò của giao tử đực quan trọng hơn giao tử cái.", "Không thể so sánh mức độ tương đồng của gene trong ti thể em bé và mẹ ruột để kiểm tra huyết thống.", "Em bé mang bộ NST của 3 người: bố, mẹ ruột và người hiến tặng trứng."],
+    "answer": ["Đ", "S", "Đ", "S"]
+  },
+  {
+    "label": "Phan II - Cau 3",
+    "type": "true_false_group",
+    "question": "Trong một dự án nghiên cứu tổng hợp protein tái tổ hợp, nhóm khoa học tại Trung tâm Công nghệ Sinh học Việt Nam đã tách được một đoạn DNA nghi ngờ là vùng mã hóa của gene quy định một chuỗi polypeptide gồm 300 amino acid. Đoạn DNA được xác định có trình tự như sau:\nMạch 1: (I)..A G A T G T A G T A C G G A A T T G A T C C A G T A A G T C A T T C... (II)\nMạch 2: (I)...T C T A C A T C A T G C C T T A A C T A G G T C A T T C A G T A A G... (II)\nĐoạn gene này có chứa bộ ba mã mở đầu, nhưng chưa xác định được đầu 3’ và 5’ của mỗi mạch DNA. Xác định mạch nào là mạch làm khuôn và chiều phiên mã?",
+    "statements": ["Mạch 2 là mạch làm khuôn và chiều phiên mã là từ (I) → (II).", "Mạch 2 là mạch làm khuôn và chiều phiên mã là từ (II) → (I).", "Mạch 1 là mạch làm khuôn và chiều phiên mã là từ (I) → (II).", "Mạch 1 là mạch làm khuôn và chiều phiên mã là từ (II) → (I)."],
+    "answer": ["Đ", "S", "S", "S"]
+  },
+  {
+    "label": "Phan II - Cau 4",
+    "type": "true_false_group",
+    "question": "Ở chuột, lkp1 là một protein tổng hợp từ gene LKP1 được sản xuất trong tế bào gan và thận nhưng không xuất hiện ở các tế bào cơ tim. Một nhà khoa học đã làm thí nghiệm phân tách và dung hợp vùng promoter (bao gồm 3 promoter A, B, C) của gene LKP1 với vùng mã hóa của gene GFP sau đó chèn toàn bộ cấu trúc ghép này vào chuột thì thấy chỉ có tế bào gan và thận có phát huỳnh quang xanh, tế bào cơ tim không phát huỳnh quang. Biết rằng promoter A, B, C lần lượt liên kết với ba yếu tố điều hòa phiên mã được gọi là X, Y và Z. Người ta đã tạo ra 7 dạng đột biến mất đoạn khác nhau liên quan đến vùng promoter của gene LKP1 sau đó dung hợp 7 trình tự đột biến đó với vùng mã hóa của gene GFP. Chèn tất cả những cấu trúc tái tổ hợp thu được vào hệ gene trong nhân của chuột và theo dõi sự phát huỳnh quang xanh ở các mô khác nhau trong cơ thể chuột. Hình 15 thể hiện kết quả thí nghiệm. Lưu ý rằng, nếu promoter bị đột biến thì sẽ không thể liên kết với yếu tố điều hòa phiên mã tương ứng. Dựa vào thông tin trên và kiến thức di truyền học, hãy cho biết mỗi nhận định sau đây đúng hay sai khi nói về thí nghiệm trên? Giải thích.",
+    "images": ["assets/image13.png"],
+    "statements": ["Mục đích của thí nghiệm nhằm xác định promoter nào có vai trò quyết định đối với sự biểu hiện đặc hiệu mô của gene GFP.", "Trong cơ thể chuột bình thường, tế bào cơ tim không có gene LKP1 nên không tổng hợp được protein lkp1.", "Protein Z có khả năng hoạt động như một yếu tố ức chế biểu hiện gene của gene LKP1 ở tim.", "Protein X có khả năng kích thích sự biểu hiện của gene LKP1 ở thận."],
+    "answer": ["Đ", "S", "Đ", "Đ"]
+  },
+  {
+    "label": "Phan III - Cau 1",
+    "type": "fill_blank",
+    "question": "Bảng 6 mô tả hàm lượng mRNA và protein tương đối của gene Z thuộc operon lac ở các chủng vi khuẩn E. coli trong môi trường có hoặc không có lactose. Biết rằng chủng 1 là chủng bình thường, các chủng 2, 3, 4 là các chủng đột biến phát sinh từ chủng 1, mỗi chủng bị đột biến ở một vị trí duy nhất trong operon lac. Chủng nào có thể bị đột biến ở vùng vận hành (vùng O)?",
+    "images": ["assets/image15.png"],
+    "answer": "4"
+  },
+  {
+    "label": "Phan III - Cau 2",
+    "type": "fill_blank",
+    "question": "HIV là loại virus gây suy giảm hệ miễn dịch ở người. Vật chất di truyền của HIV là phân tử RNA sợi đơn. Khi xâm nhập vào tế bào chủ, virus thực hiện quá trình tổng hợp DNA sợi kép từ RNA của virus (nhờ enzyme phiên mã ngược); sợi DNA kép được gắn vào hệ gene của tế bào chủ, sau đó được phiên mã tổng hợp RNA và dịch mã tổng hợp protein để tạo ra nhiều virus mới. Để ngăn chặn sự phát triển của HIV, bệnh nhân được sử dụng thuốc zidovudine. Thuốc zidovudine có chứa một chất là đồng đẳng của Thymine, trong đó nhóm 3'-OH của đường deoxyribose được thay thế bằng nhóm N3. Những nhận định nào sau đây về tác dụng của thuốc zidovudine là đúng?\n(1) Thuốc zidovudine kích thích quá trình phiên mã ngược.\n(2) Khi phiên mã ngược, chất đồng đẳng của Thymine trong thuốc zidovudine có thể liên kết với Adenine trên mạch khuôn theo nguyên tắc bổ sung.\n(3) Thuốc zidovudine làm dừng quá trình kéo dài mạch DNA, qua đó ức chế sự nhân lên của virus.\n(4) Thuốc zidovidine cũng có thể ảnh hưởng lên quá trình nhân đôi DNA của tế bào người.",
+    "answer": "234"
+  },
+  {
+    "label": "Phan III - Cau 3",
+    "type": "fill_blank",
+    "question": "Bảng 6 mô tả số thế hệ nhân đôi và tỉ lệ mạch polynucleotide chứa N15 của một phân tử DNA ở vi khuẩn E.coli được nuôi ở môi trường chỉ chứa N15, sau đó chuyển vi khuẩn này sang môi trường nuôi cấy chỉ có N14 và vi khuẩn này tiến hành phân đôi.\nXác định “?” đang là thế hệ bao nhiêu?\nThế hệ: 0, 1, (?), 6\nTỉ lệ mạch polynucleotide chứa N15: 100%, 50%, 6,25%, 1,5625%",
+    "answer": "4"
+  },
+  {
+    "label": "Phan III - Cau 4",
+    "type": "fill_blank",
+    "question": "Dưới đây là các trình tự amino acid (dùng kiểu viết tắt một chữ cái) thuộc bốn phân đoạn ngắn của protein FOXP2 được tìm thấy ở 6 loài khác nhau, gồm: tinh tinh, đười ươi, khỉ gorila, khỉ rhesus, chuột và người. Hình 10 minh họa những phân đoạn chứa tất cả các amino acid khác nhau trong protein FOXP2 khi so sánh những loài này. Các trình tự amino acid của tinh tinh, khỉ gorila và khỉ rhesus giống hệt nhau. Trình tự amino acid ở người khác với trình tự của 3 loài tinh tinh, khỉ gorila và khỉ rhesus ở 2 amino acid. Đoạn nào tương ứng với trình tự của người?",
+    "images": ["assets/image16.png"],
+    "answer": "35"
+  },
+  {
+    "label": "Phan III - Cau 5",
+    "type": "fill_blank",
+    "question": "Hệ gene của sinh vật nhân sơ gồm những thành phần nào sau đây (Hãy viết đáp án đúng theo trình tự từ nhỏ đến lớn)?\n(1) DNA vùng nhân. (2) DNA ti thể. (3) DNA lục lạp. (4) Plasmid.",
+    "answer": "14"
+  },
+  {
+    "label": "Phan III - Cau 6",
+    "type": "fill_blank",
+    "question": "Bảng 2 cho biết một số đặc điểm của mô hình điều hòa hoạt động của operon Lac của vi khuẩn E. coli. Hãy viết các số theo đúng với trình tự dcba\n1. Vùng khởi động (P) - (a) Mã hóa thông tin tổng hợp protein ức chế.\n2. Vùng vận hành (O) - (b) Mã hóa thông tin tổng hợp enzyme phân giải đường lactose.\n3. Các gene cấu trúc (Z, Y, A) - (c) Vị trí tương tác với protein ức chế.\n4. Gene điều hòa (lacI) - (d) Vị trí tương tác với enzyme RNA polymerase.",
+    "answer": "1234"
+  }
+]
