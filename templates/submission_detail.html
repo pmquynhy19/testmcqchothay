@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chi tiết bài nộp</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <h1 class="title">{{ submission.student_name }}</h1>
+      <p>
+        Thời gian: <b>{{ submission.submitted_at }}</b><br>
+        Điểm: <b>{{ submission.score }}/{{ submission.max_score }}</b>
+      </p>
+      <p><a href="/admin">Quay lại danh sách</a></p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Câu</th>
+            <th>Loại</th>
+            <th>Trả lời</th>
+            <th>Đáp án</th>
+            <th>Kết quả</th>
+            <th>Điểm</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for item in review %}
+          <tr>
+            <td>{{ item.label }}</td>
+            <td>{{ item.type }}</td>
+            <td>{{ item.selected }}</td>
+            <td>{{ item.correct }}</td>
+            <td><b>{{ item.result }}</b></td>
+            <td>{{ item.score }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>

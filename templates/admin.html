@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quản lý kết quả</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <h1 class="title">Kết quả học sinh</h1>
+      <div class="admin-actions">
+        <a class="btn" href="/admin/export.xlsx">Xuất Excel</a>
+        <a class="btn secondary" href="/admin/logout">Đăng xuất</a>
+      </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Thời gian</th>
+            <th>Học sinh</th>
+            <th>Điểm</th>
+            <th>Đã trả lời</th>
+            <th>Chi tiết</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for item in submissions %}
+          <tr>
+            <td>{{ item.id }}</td>
+            <td>{{ item.submitted_at }}</td>
+            <td>{{ item.student_name }}</td>
+            <td><b>{{ item.score }}/{{ item.max_score }}</b></td>
+            <td>{{ item.answered }}</td>
+            <td><a href="/admin/submission/{{ item.id }}">Xem</a></td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>

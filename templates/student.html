@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thi trắc nghiệm</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div id="start" class="wrap start">
+    <div class="card">
+      <h1 class="title">Thi trắc nghiệm</h1>
+      <p class="muted">Đề gồm <b id="totalStart"></b> câu. Mỗi lần hiển thị 1 câu hỏi.</p>
+      <label><b>Họ và tên học sinh</b></label>
+      <p><input id="studentName" type="text" autocomplete="name" placeholder="Nhập họ tên"></p>
+      <p class="sound"><input id="soundEnabled" type="checkbox" checked> <label for="soundEnabled">Bật âm thanh đồng hồ</label></p>
+      <button class="btn" id="startBtn">Bắt đầu làm bài</button>
+    </div>
+  </div>
+
+  <div id="exam" class="hidden">
+    <div class="top">
+      <div><span id="studentMeta" class="meta"></span> <span id="progress" class="muted"></span></div>
+      <div class="timer" id="timer">Đồng hồ: 45:00</div>
+    </div>
+    <main class="wrap">
+      <section class="card">
+        <div id="question" class="question"></div>
+        <div id="images"></div>
+        <div id="answers"></div>
+      </section>
+      <section class="nav">
+        <button class="btn secondary" id="prevBtn">Câu trước</button>
+        <button class="btn" id="nextBtn">Câu tiếp</button>
+        <button class="btn danger" id="submitBtn">Nộp bài</button>
+      </section>
+      <section class="card">
+        <b>Danh sách câu hỏi</b>
+        <div id="questionGrid" class="grid"></div>
+      </section>
+    </main>
+  </div>
+
+  <div id="result" class="wrap hidden">
+    <div class="card">
+      <h1 class="title">Kết quả bài thi</h1>
+      <div id="score" class="result-score"></div>
+      <p id="resultInfo"></p>
+    </div>
+  </div>
+
+  <script>
+    const QUESTIONS = {{ questions | tojson }};
+    const DURATION_SECONDS = 45 * 60;
+    let current = 0;
+    let answers = Array(QUESTIONS.length).fill(null);
+    let remaining = DURATION_SECONDS;
+    let timerHandle = null;
+    let audioCtx = null;
+    let tick = false;
+    const $ = id => document.getElementById(id);
+    $('totalStart').textContent = QUESTIONS.length;
+
+    function start() {
+      const name = $('studentName').value.trim();
+      if (!name) {
+        alert('Vui lòng nhập họ tên học sinh.');
+        return;
+      }
+      $('start').classList.add('hidden');
+      $('exam').classList.remove('hidden');
+      $('studentMeta').textContent = 'Học sinh: ' + name;
+      buildGrid();
+      showQuestion(0);
+      timerHandle = setInterval(tickTimer, 1000);
+      tickTimer();
+    }
+
+    function buildGrid() {
+      const grid = $('questionGrid');
+      grid.innerHTML = '';
+      QUESTIONS.forEach((_, i) => {
+        const button = document.createElement('button');
+        button.className = 'qbtn';
+        button.textContent = i + 1;
+        button.onclick = () => showQuestion(i);
+        grid.appendChild(button);
+      });
+    }
+
+    function saveAnswer() {
+      const question = QUESTIONS[current];
+      if (question.type === 'multiple_choice') {
+        const checked = document.querySelector('input[name="choice"]:checked');
+        answers[current] = checked ? checked.value : null;
+      } else if (question.type === 'fill_blank') {
+        const value = $('blankAnswer')?.value.trim();
+        answers[current] = value || null;
+      } else {
+        const selected = [];
+        for (let index = 0; index < 4; index++) {
+          const checked = document.querySelector(`input[name="tf${index}"]:checked`);
+          selected.push(checked ? checked.value : null);
+        }
+        answers[current] = selected.some(Boolean) ? selected : null;
+      }
+    }
+
+    function showQuestion(index) {
+      saveAnswer();
+      current = index;
+      const question = QUESTIONS[index];
+      const label = question.label || `Câu ${index + 1}`;
+      $('progress').textContent = `${label} (${index + 1}/${QUESTIONS.length})`;
+      $('question').textContent = `${label}. ${question.question}`;
+
+      const images = $('images');
+      images.innerHTML = '';
+      (question.images || []).forEach(src => {
+        const image = document.createElement('img');
+        image.src = src;
+        image.className = 'qimg';
+        images.appendChild(image);
+      });
+
+      const box = $('answers');
+      box.innerHTML = '';
+      if (question.type === 'multiple_choice') {
+        question.choices.forEach((choice, choiceIndex) => {
+          const value = String.fromCharCode(65 + choiceIndex);
+          const labelEl = document.createElement('label');
+          labelEl.className = 'choice';
+          labelEl.innerHTML = `<input type="radio" name="choice" value="${value}"> <b>${value}.</b> ${choice}`;
+          box.appendChild(labelEl);
+        });
+        if (answers[index]) {
+          const input = document.querySelector(`input[name="choice"][value="${answers[index]}"]`);
+          if (input) input.checked = true;
+        }
+      } else if (question.type === 'fill_blank') {
+        box.innerHTML = '<div class="blank"><b>Nhập câu trả lời:</b><p><input id="blankAnswer" type="text"></p></div>';
+        $('blankAnswer').value = answers[index] || '';
+      } else {
+        question.statements.forEach((statement, statementIndex) => {
+          const row = document.createElement('div');
+          row.className = 'tf-row';
+          row.innerHTML = `<div><b>${String.fromCharCode(97 + statementIndex)})</b> ${statement}</div><label><input type="radio" name="tf${statementIndex}" value="Đ"> Đúng</label><label><input type="radio" name="tf${statementIndex}" value="S"> Sai</label>`;
+          box.appendChild(row);
+        });
+        (answers[index] || []).forEach((value, statementIndex) => {
+          if (!value) return;
+          const input = document.querySelector(`input[name="tf${statementIndex}"][value="${value}"]`);
+          if (input) input.checked = true;
+        });
+      }
+      updateGrid();
+      window.scrollTo(0, 0);
+    }
+
+    function updateGrid() {
+      document.querySelectorAll('.qbtn').forEach((button, index) => {
+        button.className = 'qbtn' + (index === current ? ' current' : answers[index] ? ' done' : '');
+      });
+    }
+
+    function tickTimer() {
+      const minutes = Math.floor(remaining / 60);
+      const seconds = remaining % 60;
+      $('timer').textContent = `Đồng hồ: ${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+      playClock();
+      if (remaining <= 0) {
+        submit(true);
+        return;
+      }
+      remaining--;
+    }
+
+    function playClock() {
+      if (!$('soundEnabled').checked || remaining <= 0) return;
+      try {
+        audioCtx = audioCtx || new (window.AudioContext || window.webkitAudioContext)();
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        tick = !tick;
+        osc.frequency.value = remaining <= 10 ? (remaining <= 3 ? 1050 : 820) : (tick ? 620 : 470);
+        gain.gain.value = remaining <= 10 ? 0.08 : 0.035;
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.start();
+        osc.stop(audioCtx.currentTime + (remaining <= 10 ? 0.09 : 0.025));
+      } catch (error) {}
+    }
+
+    function previousQuestion() {
+      if (current > 0) showQuestion(current - 1);
+    }
+
+    function nextQuestion() {
+      if (current < QUESTIONS.length - 1) showQuestion(current + 1);
+    }
+
+    async function submit(force = false) {
+      saveAnswer();
+      const unanswered = answers.filter(answer => !answer || (Array.isArray(answer) && !answer.some(Boolean))).length;
+      if (!force && unanswered && !confirm(`Bạn còn ${unanswered} câu chưa trả lời. Vẫn nộp bài?`)) return;
+      clearInterval(timerHandle);
+
+      const response = await fetch('/submit', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({student_name: $('studentName').value.trim(), answers})
+      });
+      const data = await response.json();
+      if (!response.ok) {
+        alert(data.error || 'Không nộp được bài. Vui lòng thử lại.');
+        return;
+      }
+
+      $('exam').classList.add('hidden');
+      $('result').classList.remove('hidden');
+      $('score').textContent = `${data.score}/${data.max_score} điểm`;
+      $('resultInfo').textContent = `Đã nộp bài thành công. Mã bài nộp: ${data.submission_id}`;
+    }
+
+    $('startBtn').onclick = start;
+    $('prevBtn').onclick = previousQuestion;
+    $('nextBtn').onclick = nextQuestion;
+    $('submitBtn').onclick = () => submit(false);
+  </script>
+</body>
+</html>
